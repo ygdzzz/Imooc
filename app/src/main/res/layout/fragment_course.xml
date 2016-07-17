@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:expandedTitleMarginStart="48dp"
+            app:statusBarScrim="@android:color/transparent"
+            android:background="@color/colorCourse"
+            app:contentScrim="@color/colorCourse"
+            app:expandedTitleTextAppearance="@style/transText"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <com.jude.rollviewpager.RollPagerView
+                android:id="@+id/rollPagerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:rollviewpager_hint_paddingBottom="16dp"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="课程"
+                app:layout_collapseMode="pin" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.cjj.MaterialRefreshLayout
+        android:id="@+id/swipe"
+        app:wave_color="#20ff2020"
+        app:progress_show_circle_backgroud="true"
+        app:overlay="false"
+        app:wave_show="true"
+        app:progress_backgroud_color="#FFFAFAFA"
+        app:progress_colors="@array/material_colors"
+        app:wave_height_type="normal"
+        app:progress_show_arrow="true"
+        app:layout_progress="@layout/view_progress"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.cjj.MaterialRefreshLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.example.ygd.imooc"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/java-gen']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':easyrecyclerview')
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/ksoap2-android-assembly-3.0.0-RC.4-jar-with-dependencies.jar')
+    compile files('libs/Volley.jar')
+    compile project(':bottom-bar')
+    compile project(':recyclerviewenhanced')
+    compile project(':daoexamplegenerator')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.jude:rollviewpager:1.2.9'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:1.0.6'
+    compile 'org.greenrobot:greendao:2.2.0'
+    compile project(path: ':materialrefreshlayout')
+    compile project(':materialrefreshlayout')
+    compile project(':phoenix')
+
+    compile 'com.android.support:percent:22.2.0'
+}

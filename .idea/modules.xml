@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Imooc.iml" filepath="$PROJECT_DIR$/Imooc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bottom-bar/bottom-bar.iml" filepath="$PROJECT_DIR$/bottom-bar/bottom-bar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daoexamplegenerator/daoexamplegenerator.iml" filepath="$PROJECT_DIR$/daoexamplegenerator/daoexamplegenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easyrecyclerview/easyrecyclerview.iml" filepath="$PROJECT_DIR$/easyrecyclerview/easyrecyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/materialrefreshlayout/materialrefreshlayout.iml" filepath="$PROJECT_DIR$/materialrefreshlayout/materialrefreshlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phoenix/phoenix.iml" filepath="$PROJECT_DIR$/phoenix/phoenix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerviewenhanced/recyclerviewenhanced.iml" filepath="$PROJECT_DIR$/recyclerviewenhanced/recyclerviewenhanced.iml" />
+    </modules>
+  </component>
+</project>

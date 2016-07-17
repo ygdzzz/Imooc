@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.ygd.imooc.Activity.LoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            toolbar:title="登录"
+            toolbar:navigationIcon="@mipmap/abc_ic_clear_mtrl_alpha"
+            android:background="@color/colorMine">
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_login" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,71 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.ygd.imooc.fragment.DownloadFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:statusBarScrim="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDownload"
+            android:fitsSystemWindows="true"
+            toolbar:title="下载">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:text="下载"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="总内存26.20GB，剩余14.88GB可用"
+                    android:layout_below="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ProgressBar
+                    android:id="@+id/pb"
+                    android:layout_below="@+id/tv2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:progressDrawable="@drawable/progressbar_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_progress="@layout/view_progress"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

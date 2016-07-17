@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ygd.imooc">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.ClassProjActivity"
+            android:label="@string/title_activity_class_proj"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".player.PlayerActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".Activity.FiveColorChangingTabsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.MyCollectActivity"
+            android:label="@string/title_activity_my_collect"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.MyCSDNActivity"
+            android:label="@string/title_activity_my_csdn"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name=".broad.CompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activity.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.ModifyActivity"
+            android:label="@string/title_activity_modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.SuggestActivity"
+            android:label="@string/title_activity_suggest"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".Activity.OnlineHelpActivity"
+            android:label="@string/title_activity_online_help"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

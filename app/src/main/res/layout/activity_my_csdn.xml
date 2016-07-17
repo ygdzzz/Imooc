@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorCommunity"
+        toolbar:navigationIcon="@mipmap/abc_ic_clear_mtrl_alpha"
+        toolbar:title="CSDN">
+    </android.support.v7.widget.Toolbar>
+    <WebView
+        android:id="@+id/wv"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+
+</RelativeLayout>

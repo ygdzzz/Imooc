@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ygd.imooc.Activity.LoginActivity"
+    tools:showIn="@layout/activity_login">
+    <EditText
+        android:id="@+id/etName"
+        android:layout_marginTop="20dp"
+        android:hint="请输入账号"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etPwd"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:hint="请输入密码"
+        android:layout_below="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@+id/etPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="记住密码"
+        />
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/etPwd"
+        android:layout_toRightOf="@+id/cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自动登录"
+        />
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_marginTop="30dp"
+        android:text="登录"
+        android:background="@color/colorMine"
+        android:layout_below="@+id/cb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvForget"
+        android:layout_marginTop="20dp"
+        android:text="忘记密码"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/btLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
